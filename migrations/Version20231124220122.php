@@ -14,7 +14,7 @@ final class Version20231124220122 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return '';
+        return 'add_description_to_task';
     }
 
     public function up(Schema $schema): void

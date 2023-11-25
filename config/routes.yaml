@@ -7,5 +7,4 @@ controllers:
 
 task_index:
     path: /task
-    # the controller value has the format 'controller_class::method_name'
     controller: App\Controller\TaskController::index
