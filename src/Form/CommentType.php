@@ -14,7 +14,9 @@ class CommentType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('content', TextareaType::class)
+            ->add('content', TextareaType::class, [
+                'label' => 'Comentario',
+            ])
             ->add('Enviar', SubmitType::class, [
                 'attr' => ['class' => 'btn btn-dark'],
             ])
